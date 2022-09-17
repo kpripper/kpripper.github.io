@@ -1,0 +1,16 @@
+.sidebar {
+  float: left;
+  width: 20%;
+}
+
+.main {
+  float: left;
+  width: 80%;
+}
+
+@media screen and (max-width: 600px) {
+  .sidebar,
+  .main {
+    width: 100%;
+  }
+}

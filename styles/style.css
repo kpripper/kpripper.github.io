@@ -2,6 +2,10 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
+.photo img {
+  width: 100%;
+}
+
 .sidebar {
   float: left;
   width: 20%;

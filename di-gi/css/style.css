@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+
 :root {
   --main-blue: #2b4074;
   --bg-old-lace: #f9f6e5;
@@ -8,6 +10,7 @@ body {
   width: 1440px;
   height: 4962px;
   background-color: #fff;
+  margin: 0 auto;
 }
 
 div {
@@ -15,6 +18,7 @@ div {
 }
 
 #header {
+  background-color: var(--main-blue);
   position: absolute;
   width: 1440px;
   height: 100px;
@@ -33,6 +37,20 @@ div {
   background-image: url(/di-gi/images/bg-img.jpg);
 }
 
+.title-text {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 96px;
+  line-height: 96px;
+  /* or 100% */
+
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
 #promo {
   position: absolute;
   width: 1440px;
@@ -43,24 +61,50 @@ div {
 
 #services {
   position: absolute;
-width: 1440px;
-height: 547px;
-left: -1px;
-top: 960px;
+  width: 1440px;
+  height: 547px;
+  left: -1px;
+  top: 960px;
 }
 
 #recent-work {
   position: absolute;
-width: 1440px;
-height: 618px;
-left: calc(50% - 1440px/2);
-top: 1507px;
+  width: 1440px;
+  height: 618px;
+  left: calc(50% - 1440px / 2);
+  top: 1507px;
 }
 
 #team {
   position: absolute;
-width: 1440px;
-height: 580px;
-left: calc(50% - 1440px/2 + 1px);
-top: 2095px;
+  width: 1440px;
+  height: 580px;
+  left: calc(50% - 1440px / 2 + 1px);
+  top: 2095px;
+}
+
+#latest-news {
+  position: absolute;
+  width: 1441px;
+  height: 1044px;
+  right: -1px;
+  bottom: 1214px;
+}
+
+#testimonial {
+  position: absolute;
+  width: 1443px;
+  height: 480px;
+  left: -2px;
+  bottom: 734px;
+}
+
+#footer {
+  background-color: var(--main-blue);
+  color: #fff;
+  position: absolute;
+  width: 1440px;
+  height: 728px;
+  left: calc(50% - 1440px / 2);
+  bottom: 0px;
 }

@@ -1,0 +1,12 @@
+:root {
+  --main-blue: #2b4074;
+  --bg-old-lace: #f9f6e5;
+}
+
+body {
+  background-color: #fff;
+}
+
+div {
+  border: 1px solid var(--main-blue);
+}

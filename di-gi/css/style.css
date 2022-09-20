@@ -4,9 +4,63 @@
 }
 
 body {
+  position: relative;
+  width: 1440px;
+  height: 4962px;
   background-color: #fff;
 }
 
 div {
   border: 1px solid var(--main-blue);
+}
+
+#header {
+  position: absolute;
+  width: 1440px;
+  height: 100px;
+  left: 0px;
+  top: 0px;
+}
+
+#intro {
+  position: absolute;
+  width: 1440px;
+  height: 668px;
+  left: calc(50% - 1440px / 2);
+  top: 100px;
+  background-color: var(--main-blue);
+  color: #fff;
+  background-image: url(/di-gi/images/bg-img.jpg);
+}
+
+#promo {
+  position: absolute;
+  width: 1440px;
+  height: 192px;
+  left: calc(50% - 1440px / 2);
+  top: 768px;
+}
+
+#services {
+  position: absolute;
+width: 1440px;
+height: 547px;
+left: -1px;
+top: 960px;
+}
+
+#recent-work {
+  position: absolute;
+width: 1440px;
+height: 618px;
+left: calc(50% - 1440px/2);
+top: 1507px;
+}
+
+#team {
+  position: absolute;
+width: 1440px;
+height: 580px;
+left: calc(50% - 1440px/2 + 1px);
+top: 2095px;
 }

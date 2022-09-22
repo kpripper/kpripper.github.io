@@ -346,6 +346,7 @@ body {
   background: #f9f6e5;
   border-radius: 3px;
   cursor: pointer;
+  border: none;
 }
 
 .text-call-me {
@@ -1206,6 +1207,118 @@ body {
   height: 1044px;
   right: -1px;
   bottom: 1214px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px 157px 0 157px;
+  box-sizing: border-box;
+  background: #f9f6e5;
+}
+
+.latest-news-title {
+  position: relative;
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+  top: 50px;
+  color: var(--main-blue);
+  text-transform: capitalize;
+  width: 100%;
+  padding: 0 0 120px 0;
+}
+
+.latest-news-title:before {
+  content: '';
+  position: absolute;
+  top: 75px;
+  left: 46%;
+  width: 8%;
+  border-bottom: 8px solid var(--main-blue);
+}
+
+.latest-news-content {
+  height: 744px;
+  display: flex;
+  flex-flow: column wrap;
+  align-content: space-between;
+  justify-content: flex-start;
+}
+
+.blog {
+  position: relative;
+  width: 260px;
+  margin: 0 30px 30px 0;
+  border-radius: 4px;
+}
+
+.blog:hover .blog-text {
+  color: #fff;
+  bottom: 26px;
+  background-color: var(--main-blue);
+}
+
+.blog:hover {
+  outline: 10px solid #2b4074;
+  outline-offset: -8px;
+}
+
+.blog-text {
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  background-color: #fff;
+  bottom: 0px;
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2px;
+  color: #4a4a4a;
+  padding: 10px 0 0 20px;
+  box-sizing: border-box;
+} 
+
+.blog-1 {
+  background: url(/di-gi/images/news-1.png); 
+  height: 431px;
+}
+
+.blog-2 {
+  background: url(/di-gi/images/news-2.png);
+  height: 342px;
+}
+
+.blog-3 {
+  background: url(/di-gi/images/news-3.png);
+  height: 384px;
+}
+
+.blog-4 {
+  background: url(/di-gi/images/news-4.png);
+  height: 211px;
+}
+
+.blog-5 {
+  background: url(/di-gi/images/news-5.png);
+  height: 167px;
+}
+
+.blog-6 {
+  background: url(/di-gi/images/news-6.png);
+  height: 342px;
+}
+
+.blog-7 {
+  background: url(/di-gi/images/news-7.png);
+  height: 198px;
+}
+
+.blog-8 {
+  background: url(/di-gi/images/news-8.png);
+  height: 437px;
 }
 
 #testimonial {

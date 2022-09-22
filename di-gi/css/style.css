@@ -1014,6 +1014,8 @@ body {
   background-image: linear-gradient(#2c4274, #eff0f4);
   display: flex;
   flex-wrap: wrap;
+  padding: 0 157px;
+  box-sizing: border-box;
 }
 
 .recent-title {
@@ -1024,7 +1026,7 @@ body {
   font-size: 48px;
   line-height: 56px;
   text-align: center;
-  top: 40px;
+  top: 60px;
   color: #ffffff;
   text-transform: capitalize;
   width: 100%;
@@ -1034,23 +1036,22 @@ body {
   content: '';
   position: absolute;
   top: 75px;
-  left: 47.5%;
-  width: 5%;
+  left: 46%;
+  width: 8%;
   border-bottom: 8px solid rgb(255, 255, 255);
 }
 
 .recent-content {
   width: 100%;
-  padding: 10%;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .portfolio {
   /* position: relative; */
-  width: 258px;
+  width: 268px;
   height: 239px;
   background: rgba(0, 0, 0, 0.0001);
   box-shadow: 0px 4px 4px rgba(71, 110, 77, 0.351506);
@@ -1069,7 +1070,7 @@ body {
 .portfolio-text {
   position: relative;
   text-align: center;
-  top: 260px;
+  top: 280px;
   font-family: 'Roboto Condensed';
   font-style: normal;
   font-weight: 700;
@@ -1130,6 +1131,73 @@ body {
   height: 580px;
   left: calc(50% - 1440px / 2 + 1px);
   top: 2095px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 130px 157px 0 157px;
+  box-sizing: border-box;
+}
+
+.team-content {
+  padding: 0 0 0 100px;
+  width: 556px;
+}
+
+.team-picture {
+  background: url(/di-gi/images/video.png);
+  background-repeat: no-repeat;
+  width: 470px;
+  height: 430px;
+}
+
+.team-content-title {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  color: #4a4a4a;
+  padding-bottom: 30px;
+}
+
+.team-line {
+  position: relative;
+  width: 20%;
+  border-bottom: 8px solid var(--main-blue);
+}
+
+.team-content-text {
+  width: 556px;
+  padding-top: 35px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  /* or 133% */
+  color: #9b9b9b;
+}
+
+.read-more-team {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  color: #f9f6e5;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.read-more-button {
+  position: relative;
+  width: 250px;
+  height: 50px;
+  background: #2b4074;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  left: 570px;
+  top: -61px;
 }
 
 #latest-news {

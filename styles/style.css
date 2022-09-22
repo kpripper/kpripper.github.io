@@ -4,6 +4,10 @@ body {
 
 .photo img {
   width: 100%;
+  background: rgba(0, 0, 0, 0.0003);
+  box-shadow: 4px 4px 4px rgba(181, 181, 181, 0.352),
+    -2px 4px 4px rgba(181, 181, 181, 0.352);
+  border-radius: 4px;
 }
 
 .sidebar {

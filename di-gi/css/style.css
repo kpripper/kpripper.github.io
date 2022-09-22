@@ -1390,10 +1390,7 @@ body {
   margin: 0px 5px;
 }
 
-
-
 #footer {
-  position: relative;
   background-color: var(--main-blue);
   color: #fff;
   position: absolute;
@@ -1401,11 +1398,123 @@ body {
   height: 728px;
   left: calc(50% - 1440px / 2);
   bottom: 0px;
+  padding: 0px 157px 0 157px;
+  box-sizing: border-box;
 }
 
 .footer-logo {
-  position: absolute;
+  width: 200px;
+  height: 100px;
+  background-color: var(--main-blue);
+  position: relative;
   background-image: url(/di-gi/images/logo.png);
-  background-repeat:no-repeat;
-  top:-20px;
+  background-repeat: no-repeat;
+  background-position: center -2px;
+  top: -30px;
+  margin: 0 auto;
+}
+
+.footer-text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  /* or 89% */
+  letter-spacing: 2px;
+  color: #ffffff;
+  width: 55%;
+  padding-top: 80px;
+}
+
+.footer-social {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 63px;
+  flex-direction: row;
+  justify-content: space-around;
+  box-sizing: border-box;
+  margin: 70px 0;
+}
+
+.footer-social-fb {
+  background-image: url(/di-gi/images/fb.png);
+  border-top: 1px solid #7ebf84;
+  border-bottom: 1px solid #7ebf84;
+}
+
+.footer-social-go {
+  background-image: url(/di-gi/images/go.png);
+  border: 1px solid #7ebf84;
+}
+
+.footer-social-tw {
+  background-image: url(/di-gi/images/tw.png);
+  border: 1px solid #7ebf84;
+}
+
+.footer-social-pi {
+  background-image: url(/di-gi/images/pi.png);
+  border-top: 1px solid #7ebf84;
+  border-bottom: 1px solid #7ebf84;
+}
+
+.social-elem {
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 25%;
+  height: 63px;
+}
+
+.footer-contacts {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.footer-contacts-title {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2px;
+  color: #f9f6e5;
+}
+
+.footer-contacts {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  /* or 167% */
+  color: #ffffff;
+}
+
+.footer-block {
+  width: 25%;
+}
+
+.footer-block li {
+  list-style-type: none;
+}
+
+.footer-block ul {
+  padding: 0;
+}
+
+.footer-contacts-title {
+  padding-bottom: 20px;
+}
+
+.copyright {
+  position: absolute;
+  width: 1440px;
+  height: 42px;
+  left: 0px;
+  bottom: 0px;
+  background-color: var(--bg-old-lace);
+  padding: 0px 157px;
+  text-align: right;
+  box-sizing: border-box;
 }

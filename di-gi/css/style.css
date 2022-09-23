@@ -1518,3 +1518,36 @@ body {
   text-align: right;
   box-sizing: border-box;
 }
+
+.button-up {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2px;
+  color: #4a4a4a;
+  text-transform: uppercase;
+  padding-top: 13px;
+  cursor: pointer;
+}
+
+.grey-rect-button-up {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 18px;
+  right: 120px;
+  background: #969696;
+  transform: rotate(45deg);
+}
+
+.yellow-rect-button-up {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 21px;
+  right: 120px;
+  background: #f9f6e5;
+  transform: rotate(45deg);
+}

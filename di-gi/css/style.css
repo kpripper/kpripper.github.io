@@ -7,17 +7,13 @@
   --bg-old-lace: #f9f6e5;
 }
 
-/* body {
-  margin:0 auto;
-} */
-
 .container {
   max-width: 1138px;
   margin: 0 auto;
 }
 
 .wide-container {
-  max-width: 1440px;
+  max-width: 1138px;
   margin: 0 auto;
 }
 
@@ -87,7 +83,8 @@ header {
 
 .title-text {
   color: #ffffff;
-  width: 513px;
+  /* width: 513px; */
+  width: 68vw;
   height: 192px;
   font-family: 'Roboto Condensed';
   font-style: normal;
@@ -247,7 +244,7 @@ header {
 }
 
 .promo-title {
-  width: 557px;
+  /* width: 557px; */
   height: 32px;
   padding-bottom: 15px;
   font-family: 'Roboto';
@@ -259,7 +256,7 @@ header {
 }
 
 .promo-text {
-  width: 557px;
+  /* width: 557px; */
   height: 42px;
   font-family: 'Roboto';
   font-style: normal;
@@ -610,22 +607,27 @@ header {
 .team-container {
   height: 580px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 
 .team-content {
   height: 420px;
+  width: 47vw;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  padding: 0 0 0 20px;
 }
 
 .team-picture {
-  background: url(/di-gi/images/video.png);
-  background-repeat: no-repeat;
-  width: 460px;
-  height: 420px;
+  width: 47vw;
+}
+
+.team-picture img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
 }
 
 .team-content-title {
@@ -643,7 +645,7 @@ header {
 }
 
 .team-content-text {
-  width: 556px;
+  /* width: 556px; */
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
@@ -652,7 +654,7 @@ header {
   color: #9b9b9b;
 }
 
-.read-more-team {
+.read-more-team-inner {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
@@ -663,7 +665,29 @@ header {
   cursor: pointer;
 }
 
-.read-more-button {
+.read-more-team-outer {
+  display: none;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  color: #f9f6e5;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.read-more-button-inner {
+  width: 250px;
+  height: 50px;
+  background: #2b4074;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+}
+
+.read-more-button-outer {
+  display: none;
   width: 250px;
   height: 50px;
   background: #2b4074;
@@ -703,7 +727,7 @@ header {
 
 .latest-news-content {
   height: 744px;
-  width: 101%;
+  width: 1150px;
   display: flex;
   flex-flow: column wrap;
   align-content: space-between;
@@ -1012,21 +1036,349 @@ header {
 }
 
 /* Large devices (laptops/desktops) */
+
+@media only screen and (max-width: 1200px) {
+  .container,
+  .wide-container {
+    max-width: 1038px;
+    margin: 0 auto;
+    padding: 0 10px 0 10px;
+  }
+
+  #services {
+    height: 100%;
+  }
+
+  .services-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-before-items {
+    width: 100%;
+    height: 300px;
+  }
+
+  .service-logo {
+    align-self: center;
+  }
+
+  .service-slogan {
+    width: 100%;
+  }
+
+  .service-text-slogan {
+    width: 551px;
+  }
+
+  .service-items {
+    width: 100vw;
+  }
+
+  .service-1,
+  .service-5 {
+    border-left: none;
+  }
+
+  .service-4,
+  .service-8 {
+    border-right: none;
+  }
+
+  .recent-work {
+    height: 970px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
+  }
+
+  #recent-work {
+    background-image: linear-gradient(#2c4274, #fff);
+  }
+
+  .recent-content {
+    width: 70%;
+    height: 750px;
+    flex-wrap: wrap;
+  }
+
+  .portfolio {
+    width: 317px;
+    height: 282px;
+  }
+
+  .portfolio-text {
+    top: 310px;
+  }
+
+  .team-container {
+    flex-wrap: nowrap;
+    /* height: 680px; */
+  }
+
+  .team-content-text {
+    /* width: 500px; */
+  }
+
+  .read-more-team-inner {
+    display: none;
+  }
+
+  .read-more-team-outer {
+    display: block;
+  }
+
+  .read-more-button-inner {
+    display: none;
+  }
+
+  .read-more-button-outer {
+    display: block;
+    margin: 30px auto;
+  }
+
+  .latest-news-container {
+    height: 1370px;
+  }
+
+  .latest-news-content {
+    height: 1030px;
+    width: 850px;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: space-between;
+    justify-content: flex-start;
+  }
+
+  .copyright {
+    width: auto;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
-  .container {
+  .container,
+  .wide-container {
     max-width: 931px;
     margin: 0 auto;
+    padding: 0 10px 0 10px;
+  }
+
+  .title-text {
+    font-size: 70px;
+    line-height: 70px;
+  }
+
+  .intro-text {
+    width: 80%;
+  }
+
+  #services {
+    height: 100%;
+  }
+
+  .services-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-before-items {
+    height: 350px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .service-items {
+    height: 545px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .service-logo {
+    align-self: center;
+  }
+
+  .service-slogan {
+    width: 100%;
+  }
+
+  .service-text-slogan {
+    width: 100%;
+  }
+
+  .service-items {
+    width: 100vw;
+  }
+
+  .service-1,
+  .service-5 {
+    border-left: none;
+  }
+
+  .service-4,
+  .service-8 {
+    border-right: none;
+  }
+
+  .recent-content {
+    width: 85%;
+    height: 750px;
+    flex-wrap: wrap;
+  }
+
+  .latest-news-content {
+    height: 1100px;
+    width: 850px;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: space-between;
+    justify-content: flex-start;
+  }
+
+  .latest-news-title {
+    padding: 20px 0 20px 0;
+  }
+
+  .team-container {
+    padding: 40px 0 0 0;
+  }
+
+  .team-content {
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 890px) {
+  .container,
+  .wide-container {
+    max-width: 750px;
+    margin: 0 auto;
+  }
+
+  .portfolio {
+    width: 270px;
+    height: 242px;
+  }
+
+  .portfolio-text {
+    top: 270px;
+  }
+
+  .latest-news-container {
+    height: 1770px;
+  }
+
+  .latest-news-content {
+    height: 1450px;
+    width: 550px;
+  }
+
+  #testimonial {
+    height: 520px;
   }
 }
 
 /* Medium devices (tablets portrait ) */
 @media only screen and (max-width: 768px) {
+  .container,
+  .wide-container {
+    max-width: 663px;
+    margin: 0 auto;
+  }
+
+  .intro-text {
+    width: 80%;
+  }
+
+  .service-items {
+    height: 1245px;
+  }
+
+  .service {
+    width: 50%;
+    height: auto;
+  }
+
+  .team-container {
+    height: auto;
+  }
+
+  #footer {
+    height: 628px;
+  }
+
+  .footer-contacts {
+    flex-wrap: wrap;
+  }
+
+  .footer-block {
+    width: 50%;
+  }
+
+  .footer-block ul {
+    padding: 0 0 20px 0;
+  }
+
+  .footer-text {
+    padding: 0;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .portfolio {
+    width: 230px;
+    height: 200px;
+  }
+
+  .container,
+  .wide-container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
 }
 
 /* Portrait phones*/
 @media only screen and (max-width: 640px) {
+  .intro-text {
+    display: none;
+  }
+
+  .promo-container {
+    flex-direction: column;
+    justify-content: center;
+    height: 232px;
+  }
+
+  .promo-content {
+    text-align: center;
+    padding: 0 0 20px 0;
+  }
+
+  .portfolio {
+    width: 518px;
+    height: 460px;
+    background-size: cover;
+}
+
+.recent-work {
+  height: 2000px;
+}
+
+
+.recent-content {
+  height: 1810px;
+}
+  
 }
 
 /* Phones*/
 @media only screen and (max-width: 320px) {
+  .container,
+  .wide-container {
+    max-width: 280px;
+    margin: 0 auto;
+  }
 }

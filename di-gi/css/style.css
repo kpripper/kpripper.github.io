@@ -98,6 +98,7 @@ header {
 }
 
 .intro-text {
+  margin: 20px auto;
   width: 886px;
   height: 60px;
   font-family: 'Roboto Condensed';
@@ -110,6 +111,8 @@ header {
 }
 
 .read-more {
+  display: block;
+  margin: 0 auto;
   width: 200px;
   height: 50px;
   background: #2b4074;
@@ -230,6 +233,14 @@ header {
   height: 18px;
   background: #f9f6e5;
   transform: rotate(135deg);
+}
+
+.opacity-carousel-1 {
+  display: none;
+}
+
+.opacity-carousel-3 {
+  display: none;
 }
 
 #promo {

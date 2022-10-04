@@ -70,6 +70,7 @@ header {
 #intro {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(/di-gi/images/bg-img.jpg);
+  background-size: cover;
 }
 
 .opacity {
@@ -621,7 +622,8 @@ header {
 }
 
 .team-picture {
-  width: 47vw;
+  width: 44vw;
+  padding: 0 3vw 0 0;
 }
 
 .team-picture img {
@@ -1114,28 +1116,8 @@ header {
 
   .team-container {
     flex-wrap: nowrap;
-    /* height: 680px; */
-  }
-
-  .team-content-text {
-    /* width: 500px; */
-  }
-
-  .read-more-team-inner {
-    display: none;
-  }
-
-  .read-more-team-outer {
-    display: block;
-  }
-
-  .read-more-button-inner {
-    display: none;
-  }
-
-  .read-more-button-outer {
-    display: block;
-    margin: 30px auto;
+    max-width: 861px;
+    height: 500px;
   }
 
   .latest-news-container {
@@ -1164,9 +1146,14 @@ header {
     padding: 0 10px 0 10px;
   }
 
+  .opacity {
+    height: 618px;
+  }
+
   .title-text {
-    font-size: 70px;
-    line-height: 70px;
+    font-size: 84px;
+    line-height: 84px;
+    height: 180px;
   }
 
   .intro-text {
@@ -1222,6 +1209,23 @@ header {
     border-right: none;
   }
 
+  .read-more-team-inner {
+    display: none;
+  }
+
+  .read-more-team-outer {
+    display: block;
+  }
+
+  .read-more-button-inner {
+    display: none;
+  }
+
+  .read-more-button-outer {
+    display: block;
+    margin: 30px auto;
+  }
+
   .recent-content {
     width: 85%;
     height: 750px;
@@ -1242,14 +1246,15 @@ header {
   }
 
   .team-container {
-    padding: 40px 0 0 0;
+    padding: 40px;
+    height: 484px;
   }
 
   .team-content {
     height: auto;
   }
 }
- 
+
 @media only screen and (max-width: 890px) {
   .container,
   .wide-container {
@@ -1266,6 +1271,10 @@ header {
     top: 270px;
   }
 
+  .team-container {
+    height: 400px;
+  }
+
   .latest-news-container {
     height: 1770px;
   }
@@ -1278,6 +1287,14 @@ header {
   #testimonial {
     height: 520px;
   }
+
+  #footer {
+    height: 590px;
+  }
+
+  .footer-text {
+    padding: 0;
+  }
 }
 
 /* Medium devices (tablets portrait ) */
@@ -1288,8 +1305,13 @@ header {
     margin: 0 auto;
   }
 
+  .opacity {
+    height: 465px;
+  }
+
   .intro-text {
     width: 80%;
+    padding: 0 0 40px 0;
   }
 
   .service-items {
@@ -1299,6 +1321,10 @@ header {
   .service {
     width: 50%;
     height: auto;
+  }
+
+  .portfolio-text {
+    font-size: 18px;
   }
 
   .team-container {
@@ -1338,6 +1364,20 @@ header {
     max-width: 600px;
     margin: 0 auto;
   }
+
+  .title-text {
+    font-size: 60px;
+    line-height: 60px;
+    height: 100px;
+  }
+
+  .service-text {
+    font-size: 20px;
+  }
+
+  .portfolio-text {
+    font-size: 20px;
+  }
 }
 
 /* Portrait phones*/
@@ -1346,6 +1386,14 @@ header {
   .wide-container {
     max-width: 550px;
     margin: 0 auto;
+  }
+
+  .opacity {
+    height: 386px;
+  }
+
+  .title-text {
+    height: 115px;
   }
 
   .intro-text {
@@ -1363,26 +1411,43 @@ header {
     padding: 0 0 20px 0;
   }
 
+  .service-slogan,
+  .service-text-slogan {
+    text-align: center;
+  }
+
+  .service-text {
+    font-size: 20px;
+  }
+
+  .recent-title:before {
+    left: 41%;
+    width: 18%;
+  }
+
+  .recent-content {
+    width: 95%;
+    height: 2460px;
+  }
+
+  .recent-work {
+    height: 2700px;
+  }
+
   .portfolio {
-    max-width: 518px;
+    width: 518px;
     height: 460px;
     background-size: cover;
   }
 
-  .recent-work {
-    height: 2300px;
-  }
-
-  .recent-content {
-    height: 2110px;
-  }
-
   .portfolio-text {
-    top: 480px;
+    top: auto;
+    margin: 100% 0 0 0;
+    font-size: 30px;
   }
 
-  .portfolio-info {
-    margin: 5%;
+  .portfolio:hover .portfolio-info {
+    margin: -96% 5% 0 5%;
   }
 
   .team-container {
@@ -1418,6 +1483,33 @@ header {
     margin: 0 auto;
   }
 
+  .title-text {
+    font-size: 44px;
+    line-height: 44px;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .promo-container {
+    height: 280px;
+  }
+  .promo-title,
+  .promo-text {
+    height: auto;
+  }
+
+  .portfolio-text {
+    top: auto;
+    margin: 490px 0 0 0;
+    font-size: 30px;
+  }
+
+  .recent-content {
+    width: 95%;
+  }
+
   .latest-news-container {
     height: 3000px;
   }
@@ -1434,9 +1526,112 @@ header {
   #testimonial {
     height: 620px;
   }
+
+  #footer {
+    height: 682px;
+  }
 }
 
 /* Phones*/
 @media only screen and (max-width: 320px) {
+  .container,
+  .wide-container {
+    max-width: 280px;
+    margin: 0 auto;
+  }
 
-} */
+  .opacity {
+    height: 193px;
+  }
+
+  .arrow,
+  .read-more {
+    display: none;
+  }
+
+  .title-text {
+    font-size: 28px;
+    line-height: 28px;
+    height: 80px;
+  }
+
+  .service {
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid #f9f6e5;
+  }
+
+  .service-before-items {
+    align-items: center;
+  }
+
+  .service-items {
+    height: 2204px;
+  }
+
+  .recent-title {
+    font-size: 30px;
+    top: 30px;
+  }
+
+  .recent-work {
+    justify-content: center;
+    height: 1670px;
+  }
+
+  .recent-content {
+    height: 1470px;
+  }
+
+  .portfolio {
+    width: 280px;
+    height: 250px;
+  }
+
+  .portfolio-text {
+    margin: 290px 0 0 0;
+  }
+
+  .portfolio:hover .portfolio-info {
+    margin: -114% 5% 0 5%;
+  }
+
+  .footer-text {
+    text-align: center;
+  }
+
+  .social-elem {
+    border: none;
+  }
+
+  #testimonial {
+    height: 790px;
+  }
+
+  #footer {
+    height: 980px;
+  }
+
+  .footer-social {
+    display: flex;
+    height: 163px;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 20px 0;
+    align-items: center;
+  }
+
+  .footer-contacts {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-block {
+    text-align: center;
+  }
+
+  .copyright {
+    justify-content: center;
+  }
+}

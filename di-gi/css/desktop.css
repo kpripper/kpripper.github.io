@@ -29,8 +29,12 @@ body {
   height: 65.73px;
   left: 61px;
   top: 17px;
-  background: url(/di-gi/images/logo.png);
+  /* background: url(/di-gi/images/logo.png); */
   cursor: pointer;
+}
+
+.logo img {
+  max-width: 100%;
 }
 
 .menu-button {
@@ -82,7 +86,7 @@ body {
   top: 100px;
   background-color: var(--main-blue);
   color: #fff;
-  background: url(/di-gi/images/bg-img.jpg);
+  /* background: url(/di-gi/images/bg-img.jpg); */
 }
 
 .opacity {

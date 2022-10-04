@@ -167,6 +167,7 @@ header {
   border: 2px solid #fff;
   border-radius: 50%;
   margin: 0px 5px;
+  background: none;
 }
 
 .arrow {
@@ -235,13 +236,14 @@ header {
   transform: rotate(135deg);
 }
 
-.opacity-carousel-1 {
+.opacity-carousel {
   display: none;
 }
 
-.opacity-carousel-3 {
-  display: none;
+.active-opacity-carousel {
+  display: block;
 }
+
 
 #promo {
   background: var(--main-blue);

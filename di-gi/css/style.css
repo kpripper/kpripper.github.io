@@ -1532,6 +1532,28 @@ header {
   }
 }
 
+@media only screen and (max-width: 420px) {
+
+  .recent-work {
+    height: 2000px;
+}
+
+
+  .recent-content {
+    width: 90%;
+    height: 1800px;
+  }
+
+  .portfolio {
+    width: 340px;
+    height: 320px;
+  }
+
+  .portfolio-text {
+    margin: 360px 0 0 0;
+  }
+}
+
 /* Phones*/
 @media only screen and (max-width: 320px) {
   .container,

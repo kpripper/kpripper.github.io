@@ -5,8 +5,6 @@ window.onload = function () {
   arrowForward.addEventListener('click', carouselForward)
   backForward.addEventListener('click', carouselBack)
 
-  // window.addEventListener("resize", topCarouselAuto);
-
   // if (arrowForward) {
   //   arrowForward.addEventListener('click', carouselForward)
   //   console.log('arrowForward is')
@@ -40,6 +38,25 @@ window.onload = function () {
     }
     x[myIndex - 1].style.display = 'block'
     setTimeout(carousel, 2000, divToSlide)
+  }
+
+  carouselOpacity()
+
+  function carouselOpacity() {
+    if (window.innerWidth <= 580) {
+      var i
+      var x = document.getElementsByClassName('opacity-carousel')
+      console.log(x)
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = 'none'
+      }
+      myIndex++
+      if (myIndex > x.length) {
+        myIndex = 1
+      }
+      x[myIndex - 1].style.display = 'block'
+      setTimeout(carouselOpacity, 3000)
+    }
   }
 }
 

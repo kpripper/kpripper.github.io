@@ -112,7 +112,9 @@ header {
 }
 
 .read-more {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
   width: 200px;
   height: 50px;
@@ -287,6 +289,9 @@ header {
   border-radius: 3px;
   cursor: pointer;
   border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .text-call-me {
@@ -299,6 +304,7 @@ header {
   color: #2b4074;
   text-transform: uppercase;
   cursor: pointer;
+  padding: 5px;
 }
 
 #services {
@@ -733,6 +739,9 @@ header {
 }
 
 .read-more-button-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 250px;
   height: 50px;
   background: #2b4074;
@@ -1307,7 +1316,9 @@ header {
   }
 
   .read-more-team-outer {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .read-more-button-inner {
@@ -1315,8 +1326,10 @@ header {
   }
 
   .read-more-button-outer {
-    display: block;
     margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .recent-content {

@@ -27,9 +27,10 @@ window.onload = function () {
   function carousel(divToSlide) {
     console.log(divToSlide)
     var i
-    var x = document.getElementsByClassName('testimonial-slide')
-    var y = document.getElementsByClassName(divToSlide)
-    console.log(y)
+    //
+    var x = document.getElementsByClassName(divToSlide)
+    console.log(x)
+    //  console.log(y)
     for (i = 0; i < x.length; i++) {
       x[i].style.display = 'none'
     }
@@ -38,9 +39,8 @@ window.onload = function () {
       myIndex = 1
     }
     x[myIndex - 1].style.display = 'block'
-    setTimeout(carousel, 2000) 
+    setTimeout(carousel, 2000, divToSlide)
   }
-
 }
 
 function carouselForward() {

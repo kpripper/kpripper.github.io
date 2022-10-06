@@ -5,6 +5,8 @@ window.onload = function () {
   arrowForward.addEventListener('click', carouselForward)
   backForward.addEventListener('click', carouselBack)
 
+  // window.addEventListener("resize", topCarouselAuto);
+
   // if (arrowForward) {
   //   arrowForward.addEventListener('click', carouselForward)
   //   console.log('arrowForward is')
@@ -18,6 +20,27 @@ window.onload = function () {
   // } else {
   //   console.log('backForward is null')
   // }
+
+  var myIndex = 0
+  carousel('testimonial-slide')
+
+  function carousel(divToSlide) {
+    console.log(divToSlide)
+    var i
+    var x = document.getElementsByClassName('testimonial-slide')
+    var y = document.getElementsByClassName(divToSlide)
+    console.log(y)
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = 'none'
+    }
+    myIndex++
+    if (myIndex > x.length) {
+      myIndex = 1
+    }
+    x[myIndex - 1].style.display = 'block'
+    setTimeout(carousel, 2000) 
+  }
+
 }
 
 function carouselForward() {
@@ -48,7 +71,7 @@ function carouselBack() {
   const prevElementCircle = activeCircle.previousElementSibling
 
   activeElement.classList.remove('active-opacity-carousel')
-  activeCircle.classList.remove('white-circle-border')  
+  activeCircle.classList.remove('white-circle-border')
   if (prevElementSlider != null) {
     prevElementSlider.classList.add('active-opacity-carousel')
     prevElementCircle.classList.add('white-circle-border')

@@ -1501,6 +1501,7 @@ header {
   .title-text {
     height: 115px;
     padding: 39px;
+    font-size: 45px;
   }
 
   .intro-text {
